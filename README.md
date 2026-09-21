@@ -102,6 +102,29 @@ It features a high-performance glassmorphic UI, dynamic particle canvas backgrou
 
 ---
 
+## 🌐 How to Deploy to Vercel (Fix 404 Error)
+
+If Vercel showed a `404 Not Found` error during deployment, it was because Vercel auto-detected `server.js` as a Node app rather than serving `index.html` directly as a static website.
+
+### Fix Steps:
+1. **`vercel.json` included**: A pre-configured `vercel.json` file is now present in the root repository.
+2. **Push updates to GitHub**:
+   ```bash
+   git add .
+   git commit -m "Add vercel.json static routing config"
+   git push origin main
+   ```
+3. **Vercel Settings Configuration**:
+   - Go to your Vercel Dashboard -> **Project Settings** -> **Build & Development Settings**.
+   - Set **Framework Preset** to **Other**.
+   - **Build Command**: Leave Empty (or toggle Override off).
+   - **Output Directory**: Leave Empty (`./`).
+   - Click **Deploy** / **Redeploy**!
+
+Vercel will now serve your portfolio perfectly without any 404 errors!
+
+---
+
 ## 🔗 Connect with Seerat Rauf
 
 - ✉ Email: [seeratrauf1040@gmail.com](mailto:seeratrauf1040@gmail.com)
@@ -109,3 +132,4 @@ It features a high-performance glassmorphic UI, dynamic particle canvas backgrou
 - ⌂ Location: City Housing Scheme, Sector A, Burewala
 - 🐙 GitHub: [https://github.com/seeratrauf](https://github.com/seeratrauf)
 - 💼 LinkedIn: [https://www.linkedin.com/in/seerat-rauf-37b30b387/](https://www.linkedin.com/in/seerat-rauf-37b30b387/)
+
