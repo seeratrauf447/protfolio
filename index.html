@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seerat Rauf | Software Developer & Software Engineer</title>
+  <meta name="description" content="Portfolio of Seerat Rauf - Aspiring Software Developer specializing in C#, Laravel, Java, Flutter, and Web Development. BS Software Engineering student at COMSATS University with 3.7 CGPA.">
+  <meta name="keywords" content="Seerat Rauf, Software Developer, Laravel Developer, C# Developer, Flutter, Software Engineering COMSATS, Portfolio">
+  
+  <!-- Favicon & Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Dynamic Particle Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION BAR
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <i class="fa-solid fa-code"></i> Seerat<span>.Rauf</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark/Light Mode" title="Switch Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="btn btn-primary btn-sm" id="open-resume-btn">
+          <i class="fa-solid fa-file-pdf"></i> Resume
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-dot"></span> Available for Software Developer Roles & Internships
+          </div>
+          
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Seerat Rauf</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            <span id="typed-text"></span><span class="typing-cursor"></span>
+          </div>
+
+          <p class="hero-description">
+            Aspiring Software Developer with a strong foundation in C#, Laravel (PHP), Java, and Flutter. Passionate about backend architecture, mobile app engineering, and building clean, maintainable, scalable web applications.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i> Explore Projects
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-solid fa-paper-plane"></i> Get in Touch
+            </a>
+            
+            <div class="social-links">
+              <a href="https://github.com/seeratrauf" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/seerat-rauf-37b30b387/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:seeratrauf1040@gmail.com" class="social-icon-btn" title="Send Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Stats Counters -->
+          <div class="stats-row">
+            <div class="stat-item">
+              <h3 class="counter" data-target="3.7">0.0</h3>
+              <p>COMSATS CGPA</p>
+            </div>
+            <div class="stat-item">
+              <h3 class="counter" data-target="94.5">0</h3>
+              <p>FSc Percentage</p>
+            </div>
+            <div class="stat-item">
+              <h3 class="counter" data-target="5">0</h3>
+              <p>Key Projects</p>
+            </div>
+            <div class="stat-item">
+              <h3 class="counter" data-target="2">0</h3>
+              <p>Months Internship</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Avatar with Morphing Glow Ring -->
+        <div class="hero-avatar-wrapper">
+          <div class="avatar-ring">
+            <img src="profile.jpg" alt="Seerat Rauf - Software Developer" class="avatar-img">
+          </div>
+
+          <div class="floating-badge badge-top">
+            <div class="badge-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="badge-text">
+              <strong>COMSATS University</strong>
+              <span>BS Software Eng.</span>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom">
+            <div class="badge-icon"><i class="fa-solid fa-building"></i></div>
+            <div class="badge-text">
+              <strong>Fatima Group</strong>
+              <span>Software Intern</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT ME & LANGUAGES SECTION
+         ========================================================================== -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-user-gear"></i> Overview</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">A glimpse into my background, technical passion, and language proficiencies.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Bio Card -->
+          <div class="glass-card bio-card">
+            <h3><i class="fa-solid fa-laptop-code text-cyan"></i> Professional Profile</h3>
+            <p class="bio-text">
+              I am an aspiring software engineer currently pursuing my BS in Software Engineering at COMSATS University Islamabad (Vehari Campus). With hands-on experience spanning web development in Laravel & JavaScript and mobile app development using Flutter, I focus on constructing high-quality software with solid Object-Oriented principles.
+            </p>
+
+            <div class="info-pills">
+              <span class="info-pill"><i class="fa-solid fa-location-dot"></i> Burewala, Pakistan</span>
+              <span class="info-pill"><i class="fa-solid fa-graduation-cap"></i> BS Software Engineering</span>
+              <span class="info-pill"><i class="fa-solid fa-database"></i> MySQL & Data Structures</span>
+              <span class="info-pill"><i class="fa-solid fa-code"></i> Clean & Maintainable Code</span>
+            </div>
+          </div>
+
+          <!-- Languages Card -->
+          <div class="glass-card languages-card">
+            <h3><i class="fa-solid fa-language text-purple"></i> Languages Spoken</h3>
+            
+            <div class="language-item">
+              <div class="language-header">
+                <span>Urdu (Native)</span>
+                <span>100%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" data-progress="100%"></div>
+              </div>
+            </div>
+
+            <div class="language-item">
+              <div class="language-header">
+                <span>English (Fluent)</span>
+                <span>90%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" data-progress="90%"></div>
+              </div>
+            </div>
+
+            <div style="margin-top: 2rem; padding: 1rem; background: var(--bg-tertiary); border-radius: var(--radius-md); border: 1px solid var(--border-glass);">
+              <p style="font-size: 0.88rem; color: var(--text-secondary);">
+                <i class="fa-solid fa-circle-check text-emerald"></i> <strong>Strong Communicator:</strong> Experienced in technical writing, collaborative sprint discussions, and cross-functional teamwork.
+              </p>
+            </div>
+          </div>
+
+          <!-- Highlights Row -->
+          <div class="highlights-box">
+            <div class="glass-card highlight-card">
+              <div class="highlight-icon"><i class="fa-solid fa-cubes"></i></div>
+              <h4>OOP & Architecture</h4>
+              <p>Designing modular, extendable software structures adhering to solid principles.</p>
+            </div>
+
+            <div class="glass-card highlight-card">
+              <div class="highlight-icon"><i class="fa-solid fa-server"></i></div>
+              <h4>Laravel & Backend</h4>
+              <p>Building secure REST APIs, MVC routing, and relational database systems in MySQL.</p>
+            </div>
+
+            <div class="glass-card highlight-card">
+              <div class="highlight-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              <h4>Flutter & Mobile</h4>
+              <p>Developing responsive cross-platform mobile apps for Android & iOS.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SKILLS MATRIX & CODE PLAYGROUND
+         ========================================================================== -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Expertise</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+          <p class="section-subtitle">Core technologies, frameworks, and programming languages I master.</p>
+        </div>
+
+        <div class="skills-wrapper">
+          <!-- Backend & Core Technologies -->
+          <div class="glass-card skills-category">
+            <h3><i class="fa-solid fa-gears"></i> Backend & Core Logic</h3>
+
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>C#</span><span>88%</span></div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" data-progress="88%"></div></div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Laravel (PHP)</span><span>85%</span></div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" data-progress="85%"></div></div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Data Structures & Algorithms</span><span>82%</span></div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" data-progress="82%"></div></div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>MySQL Database</span><span>80%</span></div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" data-progress="80%"></div></div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Java (Basic)</span><span>75%</span></div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" data-progress="75%"></div></div>
+            </div>
+          </div>
+
+          <!-- Frontend & Mobile -->
+          <div class="glass-card skills-category">
+            <h3><i class="fa-solid fa-code"></i> Web & Mobile Technologies</h3>
+
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>HTML5 & CSS3</span><span>92%</span></div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" data-progress="92%"></div></div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>JavaScript & jQuery</span><span>85%</span></div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" data-progress="85%"></div></div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Flutter (Dart)</span><span>80%</span></div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" data-progress="80%"></div></div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Object-Oriented Programming (OOP)</span><span>90%</span></div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" data-progress="90%"></div></div>
+            </div>
+          </div>
+
+          <!-- Live Code Snippet Display Window -->
+          <div class="glass-card code-preview-card">
+            <div class="code-header">
+              <div class="window-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="code-tabs">
+                <button class="code-tab-btn active" data-tab="csharp">DeveloperController.cs</button>
+                <button class="code-tab-btn" data-tab="laravel">EventNotifier.php</button>
+                <button class="code-tab-btn" data-tab="flutter">BmiCalculator.dart</button>
+              </div>
+            </div>
+
+            <div class="code-body" id="code-content">
+              <!-- Code content injected dynamically via script.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EXPERIENCE SECTION
+         ========================================================================== -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Career Journey</span>
+          <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+          <p class="section-subtitle">Real-world software development internship experience in a collaborative tech environment.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Software Developer Intern</h3>
+                  <div class="timeline-company"><i class="fa-solid fa-building"></i> Fatima Group</div>
+                </div>
+                <span class="timeline-duration"><i class="fa-regular fa-clock"></i> 2 Months Internship</span>
+              </div>
+
+              <ul class="timeline-bullets">
+                <li>Completed an intensive 2-month internship contributing directly to software development tasks within the organization's tech team.</li>
+                <li>Applied Object-Oriented Programming (OOP) concepts and web development fundamentals to build efficient and clean modular software components.</li>
+                <li>Gained practical exposure to real-world development workflows, version control practices, and collaborative problem-solving alongside senior developers.</li>
+                <li>Participated in daily technical discussions and software architecture reviews to refine code quality and maintainability.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROJECTS SECTION & INTERACTIVE DEMOS
+         ========================================================================== -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Portfolio</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Interactive showcases of web and mobile software applications built using Laravel, C#, Flutter, and JavaScript.</p>
+        </div>
+
+        <!-- Filter Category Tabs -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="web">Web Applications</button>
+          <button class="filter-btn" data-filter="laravel">Laravel / PHP</button>
+          <button class="filter-btn" data-filter="mobile">Flutter / Mobile</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: Quiz Website -->
+          <div class="glass-card project-card" data-category="web">
+            <div class="project-banner project-banner-1">
+              <i class="fa-solid fa-brain project-banner-icon"></i>
+            </div>
+            <div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <h3 class="project-title">Interactive Quiz Website</h3>
+              <p class="project-desc">A dynamic, responsive browser-based quiz app featuring real-time score tracking, timer logic, and interactive feedback indicators.</p>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm open-demo-btn" data-demo="quiz">
+                <i class="fa-solid fa-play"></i> Try Live Demo
+              </button>
+              <a href="https://github.com/seeratrauf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: Event Booking App -->
+          <div class="glass-card project-card" data-category="web">
+            <div class="project-banner project-banner-2">
+              <i class="fa-solid fa-calendar-check project-banner-icon"></i>
+            </div>
+            <div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <h3 class="project-title">Event Booking App</h3>
+              <p class="project-desc">Modern web app designed for discovering upcoming tech conferences, reserving seats, managing tickets, and filtering event categories.</p>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm open-demo-btn" data-demo="booking">
+                <i class="fa-solid fa-ticket"></i> Live Preview
+              </button>
+              <a href="https://github.com/seeratrauf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3: COMSATS Event Notifier -->
+          <div class="glass-card project-card" data-category="laravel">
+            <div class="project-banner project-banner-3">
+              <i class="fa-solid fa-bell project-banner-icon"></i>
+            </div>
+            <div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+              <h3 class="project-title">COMSATS Event Notifier</h3>
+              <p class="project-desc">Automated portal for university students and faculty to broadcast notifications, schedule campus seminars, and manage department alerts.</p>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm open-demo-btn" data-demo="notifier">
+                <i class="fa-solid fa-bullhorn"></i> Demo System
+              </button>
+              <a href="https://github.com/seeratrauf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 4: BMI Calculator -->
+          <div class="glass-card project-card" data-category="mobile">
+            <div class="project-banner project-banner-4">
+              <i class="fa-solid fa-weight-scale project-banner-icon"></i>
+            </div>
+            <div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">Mobile UX</span>
+              </div>
+              <h3 class="project-title">Flutter BMI Calculator</h3>
+              <p class="project-desc">Cross-platform mobile application providing instant body mass index calculation with metric/imperial toggle and body health metrics visualization.</p>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm open-demo-btn" data-demo="bmi">
+                <i class="fa-solid fa-calculator"></i> Calculate Live
+              </button>
+              <a href="https://github.com/seeratrauf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 5: Weather App -->
+          <div class="glass-card project-card" data-category="mobile">
+            <div class="project-banner project-banner-5">
+              <i class="fa-solid fa-cloud-sun-rain project-banner-icon"></i>
+            </div>
+            <div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">API Integration</span>
+              </div>
+              <h3 class="project-title">Flutter Weather App</h3>
+              <p class="project-desc">Real-time mobile weather forecasting application displaying temperature trends, humidity metrics, and atmospheric condition alerts.</p>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm open-demo-btn" data-demo="weather">
+                <i class="fa-solid fa-sun"></i> Test Weather App
+              </button>
+              <a href="https://github.com/seeratrauf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EDUCATION SECTION
+         ========================================================================== -->
+    <section class="education" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-user-graduate"></i> Academic Academic</span>
+          <h2 class="section-title">Education & <span class="gradient-text">Degrees</span></h2>
+          <p class="section-subtitle">Academic foundations reflecting consistent high performance and dedication.</p>
+        </div>
+
+        <div class="education-grid">
+          <!-- Degree 1 -->
+          <div class="glass-card edu-card">
+            <h3 class="edu-degree">BS in Software Engineering</h3>
+            <div class="edu-school">COMSATS University Islamabad — Vehari Campus</div>
+            <p style="color: var(--text-secondary); margin-bottom: 1.25rem; font-size: 0.95rem;">
+              Focused on Object-Oriented Software Design, Database Systems, Web Application Architecture, Algorithms, and Software Project Management.
+            </p>
+            <div class="edu-meta">
+              <span class="edu-dates"><i class="fa-regular fa-calendar"></i> Feb 2024 – Dec 2027</span>
+              <span class="edu-badge"><i class="fa-solid fa-star"></i> CGPA 3.7</span>
+            </div>
+          </div>
+
+          <!-- Degree 2 -->
+          <div class="glass-card edu-card">
+            <h3 class="edu-degree">FSc (Pre-Medical)</h3>
+            <div class="edu-school">Superior College, Burewala</div>
+            <p style="color: var(--text-secondary); margin-bottom: 1.25rem; font-size: 0.95rem;">
+              Higher Secondary School Certificate with distinction. Developed strong analytical reasoning and disciplined academic research habits.
+            </p>
+            <div class="edu-meta">
+              <span class="edu-dates"><i class="fa-regular fa-calendar"></i> Sep 2021 – Apr 2022</span>
+              <span class="edu-badge"><i class="fa-solid fa-trophy"></i> 94.5% Marks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-envelope-open-text"></i> Connect</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-subtitle">Interested in collaborating or discussing developer opportunities? Feel free to reach out!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info List -->
+          <div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Let's Talk!</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+              I am open to software development positions, internship roles, and technical collaborations.
+            </p>
+
+            <div class="contact-info-list">
+              <div class="glass-card contact-chip" id="copy-email-chip">
+                <div class="chip-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="chip-details">
+                  <strong>Email Address (Click to copy)</strong>
+                  <span>seeratrauf1040@gmail.com</span>
+                </div>
+              </div>
+
+              <div class="glass-card contact-chip" id="copy-phone-chip">
+                <div class="chip-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="chip-details">
+                  <strong>Phone Number (Click to copy)</strong>
+                  <span>0313 6992115</span>
+                </div>
+              </div>
+
+              <div class="glass-card contact-chip">
+                <div class="chip-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="chip-details">
+                  <strong>Location</strong>
+                  <span>City Housing Scheme, Sector A, Burewala</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="glass-card contact-form-card">
+            <form id="contact-form">
+              <div class="form-group">
+                <label class="form-label" for="sender-name">Your Name</label>
+                <input type="text" id="sender-name" name="name" class="form-input" placeholder="e.g. John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="sender-email">Your Email</label>
+                <input type="email" id="sender-email" name="email" class="form-input" placeholder="e.g. john@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="sender-message">Message</label>
+                <textarea id="sender-message" name="message" class="form-input" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn btn-primary" style="width: 100%;">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer>
+    <div class="container footer-content">
+      <a href="#hero" class="back-to-top" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+
+      <div class="logo">
+        <i class="fa-solid fa-code"></i> Seerat<span>.Rauf</span>
+      </div>
+
+      <p style="color: var(--text-secondary); font-size: 0.9rem;">
+        &copy; <span id="year"></span> Seerat Rauf. All rights reserved. Designed for software engineering excellence.
+      </p>
+
+      <div class="social-links">
+        <a href="https://github.com/seeratrauf" target="_blank" rel="noopener noreferrer" class="social-icon-btn"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/seerat-rauf-37b30b387/" target="_blank" rel="noopener noreferrer" class="social-icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:seeratrauf1040@gmail.com" class="social-icon-btn"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL 1: RESUME PREVIEW
+       ========================================================================== -->
+  <div class="modal-overlay" id="resume-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-file-invoice text-cyan"></i> Curriculum Vitae - Seerat Rauf</h3>
+        <button class="modal-close-btn" id="close-resume-btn">&times;</button>
+      </div>
+      <div class="modal-body" style="line-height: 1.7;">
+        <div style="border-bottom: 2px solid var(--accent-cyan); padding-bottom: 1rem; margin-bottom: 1.5rem;">
+          <h2 style="font-size: 1.8rem;">SEERAT RAUF</h2>
+          <p style="color: var(--accent-cyan); font-weight: 600;">Software Developer  •  BS Software Engineering</p>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.4rem;">
+            ✉ seeratrauf1040@gmail.com | ☎ 0313 6992115 | ⌂ City Housing Scheme, Sector A, Burewala
+          </p>
+        </div>
+
+        <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">PROFILE</h4>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+          Aspiring software developer with a strong foundation in C# and basic Java, complemented by web development skills in Laravel, HTML, CSS, and JavaScript. Currently pursuing a BS in Software Engineering, with hands-on project experience across web and mobile apps and a keen interest in backend development and clean, maintainable code.
+        </p>
+
+        <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">TECHNICAL SKILLS</h4>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+          C#, Java (Basic), Laravel (PHP), HTML & CSS, JavaScript & jQuery, OOP, Data Structures & Algorithms, MySQL, Flutter.
+        </p>
+
+        <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">EXPERIENCE</h4>
+        <p style="font-weight: 600;">Software Developer Intern — Fatima Group (2 Months)</p>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+          • Applied OOP concepts and web development fundamentals in professional setting.<br>
+          • Gained exposure to real-world development workflows and collaborative problem solving.
+        </p>
+
+        <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">EDUCATION</h4>
+        <p style="font-weight: 600;">BS Software Engineering — COMSATS University Islamabad (Vehari Campus)</p>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 0.5rem;">Feb 2024 – Dec 2027 · CGPA 3.7</p>
+        <p style="font-weight: 600;">FSc (Pre-Medical) — Superior College, Burewala</p>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Sep 2021 – Apr 2022 · 94.5%</p>
+
+        <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+          <button class="btn btn-primary" onclick="window.print()">
+            <i class="fa-solid fa-print"></i> Print / Save as PDF
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 2: INTERACTIVE LIVE PROJECT DEMOS
+       ========================================================================== -->
+  <div class="modal-overlay" id="demo-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="demo-title"><i class="fa-solid fa-laptop-code"></i> Live Project Simulator</h3>
+        <button class="modal-close-btn" id="close-demo-btn">&times;</button>
+      </div>
+      <div class="modal-body" id="demo-modal-body">
+        <!-- Interactive widgets populated dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
